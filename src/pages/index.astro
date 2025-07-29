@@ -1,4 +1,8 @@
 ---
+import Navigation from '../components/Navigation.astro';
+import Footer from '../components/Footer.astro';
+import '../styles/global.css';
+
 const pageTitle = "DBMT"
 ---
 
@@ -11,11 +15,11 @@ const pageTitle = "DBMT"
 		<title>{pageTitle}</title>
 	</head>
 	<body>
-		<a href="/">Home</a>
-		<a href="/ethos/">Ethos</a>
-		<a href="/blog/">Blog</a>
+		<Navigation />
 
 		<h1>{pageTitle}</h1>
 		<h2>Dirtbag Multidisciplinary Toolkit</h2>
+
+		<Footer />
 	</body>
 </html>

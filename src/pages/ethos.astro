@@ -1,4 +1,8 @@
 ---
+import Navigation from '../components/Navigation.astro';
+import Footer from '../components/Footer.astro';
+import '../styles/global.css';
+
 const pageTitle = "Ethos";
 
 const identity = {
@@ -10,6 +14,8 @@ const identity = {
 };
 
 const skill = ["PostGIS", "Web Dev", "Minor Pentatonic Scales"];
+
+const accentColor = "orange";
 ---
 
 <html lang="en">
@@ -20,18 +26,20 @@ const skill = ["PostGIS", "Web Dev", "Minor Pentatonic Scales"];
 		<meta name="generator" content={Astro.generator} />
 		<title>{pageTitle}</title>
 
-        <style>
+        <style define:vars={{accentColor}}>
             h1 {
-                color: orange;
+                color: var(--accentColor);
                 font-size: 4rem;
+            }
+
+            .skill {
+                color: var(--accentColor);
             }
         </style>
 
 	</head>
 	<body>
-        <a href="/">Home</a>
-		<a href="/ethos/">Ethos</a>
-		<a href="/blog/">Blog</a>
+        <Navigation />
 
 		<h1>{pageTitle}</h1>
         <ul>
@@ -44,7 +52,9 @@ const skill = ["PostGIS", "Web Dev", "Minor Pentatonic Scales"];
 
         <p>My skills are:</p>
         <ul>
-        {skill.map((skill) => <li>{skill}</li>)}
+        {skill.map((skill) => <li class="skill">{skill}</li>)}
         </ul>
+
+        <Footer />
 	</body>
 </html>
