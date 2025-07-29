@@ -1,5 +1,15 @@
 ---
 const pageTitle = "Ethos";
+
+const identity = {
+    firstName: "Dirt",
+    lastName: "Bag",
+    location: "Planet Earth",
+    occupation: "GIS Developer and Geospatial Data Engineer",
+    hobbies: ["Camping", "Rock Climbing", "Playing sick synthesizers"]
+};
+
+const skill = ["PostGIS", "Web Dev", "Minor Pentatonic Scales"];
 ---
 
 <html lang="en">
@@ -16,5 +26,17 @@ const pageTitle = "Ethos";
 		<a href="/blog/">Blog</a>
 
 		<h1>{pageTitle}</h1>
+        <ul>
+            <li>My name is {identity.firstName} {identity.lastName}</li>
+            <li>I live on {identity.location} and I'm an {identity.occupation}</li>
+            {identity.hobbies.length >= 3 &&
+                <li>What I like to do: {identity.hobbies[0]}, {identity.hobbies[1]}, and {identity.hobbies[2]}</li>
+            }
+        </ul>
+
+        <p>My skills are:</p>
+        <ul>
+        {skill.map((skill) => <li>{skill}</li>)}
+        </ul>
 	</body>
 </html>
