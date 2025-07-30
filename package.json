@@ -10,6 +10,9 @@
   },
   "dependencies": {
     "@astrojs/rss": "^4.0.12",
+    "@fontsource-variable/ibm-plex-sans": "^5.2.6",
+    "@fontsource/ibm-plex-serif": "^5.2.6",
+    "@fontsource/rubik-mono-one": "^5.2.6",
     "astro": "^5.12.5"
   }
 }
