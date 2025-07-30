@@ -1,0 +1,27 @@
+@font-face {
+  font-family: 'OCR-B';
+  src: url('/fonts/OCR-B.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+
+  /*Basic Site Colors*/
+  --color-bg: #F4EADA;
+  --color-text: #3A332F;
+  --color-accent: #E85D04;
+
+  /*Secondary Colors*/
+  --color-olive-dark: #6B705C;
+  --color-olive-lite: #878E76;
+  --color-teal: #5D8c8c;
+
+  /*Fonts*/
+  --font-brand: 'Rubik Mono One', sans-serif;
+  --font-heading: 'IBM Plex Sans Variable', sans-serif;
+  --font-body: 'IBM Plex Serif', serif;
+  --font-code: 'OCR-B', monospace;
+
+}

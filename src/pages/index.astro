@@ -1,7 +1,28 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
+import '@fontsource/ibm-plex-serif';
+import '@fontsource/rubik-mono-one';
+import '@fontsource-variable/ibm-plex-sans';
+import '../styles/homepage.css';
 const pageTitle = "DBMT";
 ---
-<BaseLayout pageTitle={pageTitle}>
-  <h2>Dirtbag Multidisciplinary Toolkit</h2>
-</BaseLayout>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<title>{pageTitle}</title>
+	</head>
+	<body>
+		<h1 class="site-title">
+      <span>Dirtbag</span><br/> 
+      <span>Multidisciplinary</span><br/>
+      <span>Toolkit</span><br/>
+    </h1>
+    <ul class="home-nav">
+      <li><a href="/projects/">Projects</a></li>
+      <li><a href="/blog/">Blog</a></li>
+      <li><a href="/ethos/">Ethos</a></li>
+    </ul>
+	</body>
+</html>
+

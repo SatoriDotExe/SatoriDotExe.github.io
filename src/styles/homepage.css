@@ -1,0 +1,42 @@
+@import 'global.css';
+
+.site-title {
+  font-family: var(--font-brand);
+  font-size: 2rem;
+  color: var(--color-bg);
+  text-transform: uppercase;
+}
+
+.site-title>span {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  background-color: #eb5c34;
+  line-height: 1.5;
+}
+
+.home-nav {
+  list-style-type: none;
+  padding: 0;
+  margin: auto;
+  width: 50%;
+}
+
+.home-nav>li {
+    text-align: center;
+    margin: 0 0 2rem 0;
+}
+
+.home-nav>li>a {
+    background-color: var(--color-olive-lite);
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    color: var(--color-text);
+    text-decoration: none;
+    width: 10rem;
+    padding: 0.5rem;
+}
+
+.home-nav>li>a:hover {
+    background-color: var(--color-olive-dark);
+    color: var(--color-text);
+}
