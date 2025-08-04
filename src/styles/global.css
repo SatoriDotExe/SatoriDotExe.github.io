@@ -1,15 +1,27 @@
 @import 'variables.css';
 
 html {
-  background-color: var(--color-bg);
+  background-color: var(--color-text);
 }
 
 h1, h2, h3 {
   font-family: var(--font-heading);
-  color: var(--color-text);
+  color: var(--color-bg);
 }
 
 body, p {
   font-family: var(--font-body);
-  color: var(--color-text);
+  color: var(--color-bg);
 }
+
+pre {
+  font-family: monospace;
+  font-size: 0.69vw;
+  color: var(--color-bg);
+}
+
+
+pre>a {
+    text-decoration: none;
+    color: var(--color-bg);
+  }
