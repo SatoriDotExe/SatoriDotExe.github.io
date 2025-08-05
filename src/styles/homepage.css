@@ -22,7 +22,7 @@
 pre {
     font-family: monospace;
     font-size: 0.69vw;
-    color: var(--color-bg);
+    color: var(--color-text);
 }
 
 .menu-grid-item {
@@ -42,11 +42,11 @@ a {
     width: 5rem;
     padding: 1rem 2.5rem;
     color: var(--color-text);
-    background-color: var(--color-teal);
+    background-color: var(--color-accent1);
     text-decoration: none;
     margin: 1rem 0;
 }
 
 a:hover {
-    background-color: var(--color-accent);
+    background-color: var(--color-accent2);
 }

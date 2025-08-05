@@ -35,19 +35,31 @@ _________<a href="/" class="homeascii"><span>\////////////</span><!--      -->__
 <style>
 
     .homeascii>span {
-        transition: color 1s;
+        transition: color 0.75s;
     }
 
     .homeascii.hovered>span {
-        color: var(--color-accent);
+        color: var(--color-accent1);
     }
 
-    .blogascii.hovered, .ethosascii.hovered {
-        color: var(--color-accent);
+    .blogascii, .projectsascii, .ethosascii, .contactascii {
+        transition: color 0.5s;
     }
 
-    .projectsascii.hovered, .contactascii.hovered  {
-        color: var(--color-teal);
+    .blogascii.hovered {
+        color: var(--color-accent2);
+    }
+
+    .projectsascii.hovered {
+        color: var(--color-accent4);
+    }
+
+    .ethosascii.hovered {
+        color: var(--color-accent3);
+    }
+    
+    .contactascii.hovered  {
+        color: var(--color-accent1);
     }
 
 </style>

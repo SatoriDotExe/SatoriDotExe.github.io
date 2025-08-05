@@ -9,14 +9,14 @@
 :root {
 
   /*Basic Site Colors*/
-  --color-bg: #F4EADA;
-  --color-text: #3A332F;
-  --color-accent: #E85D04;
+  --color-text: #F4EADA;
+  --color-bg: #3A332F;
 
   /*Secondary Colors*/
-  --color-olive-dark: #6B705C;
-  --color-olive-lite: #878E76;
-  --color-teal: #5D8c8c;
+  --color-accent1: #32afff;
+  --color-accent2: #E4FD03;
+  --color-accent3: #19DE12;
+  --color-accent4: #eb5c34;
 
   /*Fonts*/
   --font-brand: 'Rubik Mono One', sans-serif;
