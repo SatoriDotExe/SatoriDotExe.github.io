@@ -8,26 +8,181 @@ import '../styles/global.css';
 
 const { pageTitle } = Astro.props;
 ---
-
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
 		<title>{pageTitle}</title>
 	</head>
 	<body>
-		<Header />
+    <div class="grid-container">
 
-		<h1>{pageTitle}</h1>
 
+      <div class="grid-row1-col1">
+		<a href="/">
+          <pre class="homeascii">
+      _.ooo-._   
+    .OOOP   _ '. 
+   dOOOO   (_)  \
+  OOOOOb         |
+  OOOOOOb.       |
+  OOOOOOOOb      |
+   YOO(_)OOO    /
+    'OOOOOY  _.'
+      '""""''
+          </pre>
+		</a>
+      </div>
+
+      <div class="grid-row1-col2">
+		<a href="/blog/">
+        	<pre class="blogascii">
+                     
+                   
+.___________________.
+|   __   __         |
+|  / /  / /__  ___ _|
+| / _ \/ / _ \/ _ `/|
+|/_.__/_/\___/\_, / |
+|____________/___/__|
+                     
+          </pre>
+		</a>
+      </div>
+
+      <div class="grid-row1-col3">
+		<a href="/projects/">
+          <pre class="projectsascii">
+.____________________________________.
+|                    _         __    |
+|   ___  _______    (_)__ ____/ /____|
+|  / _ \/ __/ _ \  / / -_) __/ __(_--|
+| / .__/_/  \___/_/ /\__/\__/\__/___/|
+|/_/___________|___/_________________|
+
+
+
+          </pre>
+		</a>
+      </div>
+
+      <div class="grid-row1-col4">
+		<a href="/ethos/">
+          <pre class="ethosascii">
+
+
+
+.______________________.
+|      __  __          |
+| ___ / /_/ /  ___  ___|
+|/ -_) __/ _ \/ _ \(_--|
+|\__/\__/_//_/\___/___/|
+'----------------------'
+          </pre>
+		</a>
+      </div>
+
+      <div class="grid-row1-col5">
+		<a href="/contact/">
+          <pre class="contactascii">
+
+.________________________________.
+|                __           __ |
+| _______  ___  / /____ _____/ /_|
+|/ __/ _ \/ _ \/ __/ _ `/ __/ __/|
+|\__/\___/_//_/\__/\_,_/\__/\__/ |
+'--------------------------------'
+
+
+		  </pre>
+		</a>
+      </div>
+
+      <div class="grid-row2-col2">
         <slot />
+      </div>
 
-		<Footer />
+      <div class="grid-row2-col1 ">
+        <pre>
+     _____    
+    /  /::\   
+   /  /:/\:\  
+  /  /:/  \:\ 
+ /__/:/ \__\:|
+ \  \:\ /  /:/
+  \  \:\  /:/ 
+   \  \:\/:/  
+    \  \::/   
+     \__\/  
+     </pre>
+      </div>
 
-		<script>
-			import "../scripts/menu.js";
-  		</script>
+      <div class="grid-row3-col1">
+        <pre>
+     _____    
+    /::\  \   
+   /:/\:\  \  
+  /:/ /::\__\ 
+ /:/_/:/\:|__|
+ \:\/:/ /:/  /
+  \::/_/:/  / 
+   \:\/:/  /  
+    \::/  /   
+     \/__/  
+        </pre>
+      </div>
+
+      <div class="grid-row4-col1">
+        <pre>
+      ___     
+     /\__\    
+    /::|  |   
+   /:|:|  |   
+  /:/|:|__|__ 
+ /:/ |::::\__\
+ \/__/~~/:/  /
+       /:/  / 
+      /:/  /  
+     /:/  /   
+     \/__/   
+        </pre>
+      </div>
+
+      <div class="grid-row5-col1">
+        <pre>
+      ___     
+     /__/\    
+     \  \:\   
+      \__\:\  
+      /  /::\ 
+     /  /:/\:\
+    /  /:/__\/
+   /__/:/     
+   \__\/ 
+        </pre>
+      </div>
+      
+    </div>
+
 	</body>
+
+	<script>
+    const groups = ['homeascii', 'blogascii', 'projectsascii', 'ethosascii', 'contactascii'];
+
+    groups.forEach(group => {
+    const elements = document.querySelectorAll(`.${group}`);
+    
+    elements.forEach(el => {
+        el.addEventListener('mouseenter', () => {
+        elements.forEach(e => e.classList.add('hovered'));
+        });
+
+        el.addEventListener('mouseleave', () => {
+        elements.forEach(e => e.classList.remove('hovered'));
+        });
+    });
+});
+</script>
+
 </html>

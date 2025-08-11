@@ -1,67 +1,10 @@
 ---
-import '@fontsource/ibm-plex-serif';
-import '@fontsource/rubik-mono-one';
-import '@fontsource-variable/ibm-plex-sans';
-import '../styles/homepage.css';
-const pageTitle = "DBMT";
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const pageTitle = "DBMT"
 ---
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<title>{pageTitle}</title>
-	</head>
-	<body>
-    <div class="grid-container">
+<BaseLayout pageTitle={pageTitle}>
 
-      <div class="title-grid-item">
-        <pre>
-     _____    
-    /  /::\   
-   /  /:/\:\  
-  /  /:/  \:\ 
- /__/:/ \__\:|
- \  \:\ /  /:/
-  \  \:\  /:/ 
-   \  \:\/:/  
-    \  \::/   
-     \__\/       
-     _____    
-    /::\  \   
-   /:/\:\  \  
-  /:/ /::\__\ 
- /:/_/:/\:|__|
- \:\/:/ /:/  /
-  \::/_/:/  / 
-   \:\/:/  /  
-    \::/  /   
-     \/__/  
-      ___     
-     /\__\    
-    /::|  |   
-   /:|:|  |   
-  /:/|:|__|__ 
- /:/ |::::\__\
- \/__/~~/:/  /
-       /:/  / 
-      /:/  /  
-     /:/  /   
-     \/__/       
-      ___     
-     /__/\    
-     \  \:\   
-      \__\:\  
-      /  /::\ 
-     /  /:/\:\
-    /  /:/__\/
-   /__/:/     
-   \__\/    
-              
-        </pre>
-      </div>
-      
-    </div>
-	</body>
-</html>
+    <h1>Welcome to the Dirtbag Multidisciplinary Toolkit.</h1>
 
+</BaseLayout>
