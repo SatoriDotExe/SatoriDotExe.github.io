@@ -6,6 +6,14 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'OCR-A';
+  src: url('/fonts/OCR-A.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
 
   /*Basic Site Colors*/
@@ -19,7 +27,7 @@
   --color-accent4: #eb5c34;
 
   /*Fonts*/
-  --font-brand: 'Rubik Mono One', sans-serif;
+  --font-brand: 'OCR-A', monospace;
   --font-heading: 'IBM Plex Sans Variable', sans-serif;
   --font-body: 'IBM Plex Serif', serif;
   --font-code: 'OCR-B', monospace;

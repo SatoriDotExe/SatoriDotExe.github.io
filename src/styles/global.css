@@ -8,7 +8,7 @@ html, body {
 }
 
 h1, h2, h3 {
-  font-family: var(--font-code);
+  font-family: var(--font-brand);
   color: var(--color-text);
 }
 
@@ -22,13 +22,23 @@ a {
     color: var(--color-text);
   }
 
+.firstchar {
+  font-family: var(--font-heading);
+  float: left;
+  font-size: 3.5rem;
+  line-height: 2.8rem;
+  padding-right: 8px;
+  padding-left: 3px;
+  font-weight: bold;
+}
 .grid-container {
     width: 100dvw;
     height: 100dvh;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    place-items: left;
+    grid-template-columns: auto repeat(4, 1fr) auto;
+    grid-template-rows: auto repeat(4, 1fr);
+    align-items: center;
+    justify-items: center;
 }
 
 .grid-row1-col1 {
@@ -37,27 +47,28 @@ a {
 }
 
 .grid-row1-col2 {
-    place-self: center;
     grid-column: 2;
     grid-row: 1;
 }
 
 .grid-row1-col3 {
-    place-self: center;
     grid-column: 3;
     grid-row: 1;
 }
 
 .grid-row1-col4 {
-    place-self: center;
     grid-column: 4;
     grid-row: 1;
 }
 
 .grid-row1-col5 {
-    place-self: center;
     grid-column: 5;
     grid-row: 1;
+}
+
+.grid-row1-col6 {
+      grid-column: 6;
+      grid-row: 1;
 }
 
 .grid-row2-col1 {
@@ -67,9 +78,13 @@ a {
 
 .grid-row2-col2 {
     grid-column-start: 2;
-    grid-column-end: 5;
+    grid-column-end: 6;
     grid-row-start: 2;
     grid-row-end: 5;
+    align-self: start;
+    justify-self: start;
+    padding-left: 5rem;
+    padding-right: 5rem;
 }
 
 .grid-row3-col1 {
@@ -89,7 +104,7 @@ a {
 
 pre {
     font-family: monospace;
-    font-size: 0.75vw;
+    font-size: 0.7vw;
     color: var(--color-text);
 }
 
