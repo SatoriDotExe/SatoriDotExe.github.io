@@ -17,8 +17,8 @@
 :root {
 
   /*Basic Site Colors*/
-  --color-text: #F4EADA;
-  --color-bg: #3A332F;
+  --color-bg: #F4EADA;
+  --color-text: #3A332F;
 
   /*Secondary Colors*/
   --color-accent1: #32afff;

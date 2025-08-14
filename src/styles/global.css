@@ -106,6 +106,7 @@ pre {
     font-family: monospace;
     font-size: 0.7vw;
     color: var(--color-text);
+    font-weight: bold;
 }
 
 .homeascii {
