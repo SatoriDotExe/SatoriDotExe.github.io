@@ -3,31 +3,32 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import '../styles/global.css';
 
 const pageTitle = "Ethos";
-
-const identity = {
-    firstName: "Dirt",
-    lastName: "Bag",
-    location: "Planet Earth",
-    occupation: "GIS Developer and Geospatial Data Engineer",
-    hobbies: ["Camping", "Rock Climbing", "Playing sick synthesizers"]
-};
-
-const skill = ["PostGIS", "Web Dev", "Minor Pentatonic Scales"];
-
 ---
 <BaseLayout pageTitle={pageTitle}>
-  <h2>Dirtbag Multidisciplinary Toolkit</h2>
-  <ul>
-        <li>My name is {identity.firstName} {identity.lastName}</li>
-        <li>I live on {identity.location} and I'm an {identity.occupation}</li>
-        {identity.hobbies.length >= 3 &&
-            <li>What I like to do: {identity.hobbies[0]}, {identity.hobbies[1]}, and {identity.hobbies[2]}</li>
-        }
-    </ul>
+    <h1>ETHOS</h1>
 
-    <p>My skills are:</p>
-    <ul>
-    {skill.map((skill) => <li class="skill">{skill}</li>)}
-    </ul>
+    <p>This is a guide. </p></br>
+
+    <p>A toolkit for wanderers.</p></br>
+
+    <p>A field manual for the inner and outer world.</p></br>
+
+    <p>A collection of things that work and things that last.</p>
+    <p>Things that won't sell your data and won't let you down.</p></br>
+
+    <p>The DBMT is a trail.</p>
+    <p>Not to the summit,</p>
+    <p>but to the realization that you never needed the trail markers.</p></br>
+
+    <p>The algorithm wants you passive,</p>
+    <p>wants you to keep scrolling.</p>
+    <p>We'd rather you get lost.</p>
 </BaseLayout>
-        
+
+<style>
+
+    h1 {
+        padding-bottom: 1rem;
+    }
+
+</style>

@@ -10,16 +10,4 @@ image:
 tags: ["astro", "blogging", "learning in public"]
 ---
 
-Welcome to my _new blog_ about learning Astro! Here, I will share my learning journey as I build a new website.
-
-## What I've accomplished
-
-1. **Installing Astro**: First, I created a new Astro project and set up my online accounts.
-
-2. **Making Pages**: I then learned how to make pages by creating new `.astro` files and placing them in the `src/pages/` folder.
-
-3. **Making Blog Posts**: This is my first blog post! I now have Astro pages and Markdown posts!
-
-## What's next
-
-I will finish the Astro tutorial, and then keep adding more posts. Watch this space for more to come.
+  <span class="firstchar">S</span><span class="smallcaps">tuart Brand created the</span> *Whole Earth Catalog* in 1968 in an attempt to connect people to their environment. While the tagline *"access to tools"* sounds vague and somewhat quant, that was by design. While it did contain reviews of all of the typical products we would consider tools, it also served as a colleciton of a wide variety of tools: everything from geodesic dome house kits to reviews of Carl Jung books. 
